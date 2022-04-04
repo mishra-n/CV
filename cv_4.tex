@@ -22,8 +22,8 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=.5in,top=.5in,right=.5in,bottom=.5in]{geometry} % Document margins
-%\usepackage[left=1.in,top=1.in,right=1.in,bottom=1.in]{geometry} % Document margins
+%\usepackage[left=.5in,top=.5in,right=.5in,bottom=.5in]{geometry} % Document margins
+\usepackage[left=1.in,top=1.in,right=1.in,bottom=1.in]{geometry} % Document margins
 %\usepackage[left=.9in,top=.9in,right=.9in,bottom=.9in]{geometry} % Document margins
 
 \usepackage{hyperref}
@@ -40,9 +40,11 @@
 
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0pt}\rlap{#1}}
-\name{Nishant Mishra} % Your name
-\address{(+1)~503~332~0521 } \\ % Your address
-\address{\href{https://github.com/nishantmishra99}{GitHub} \\ 
+\name{\Large Nishant Mishra} % Your name
+%\name{Nishant Mishra} % Your name
+
+\address{
+\href{https://github.com/mishra-n}{GitHub} \\
 \href{mailto:nishant.mishra@berkeley.edu}{Email} } \\% Your phone number and email
 
 \begin{document}
@@ -53,8 +55,8 @@
 
 \begin{rSection}{Education}
 
-{\bf University of California, Berkeley} \hfill {Aug 2017 - Present} 
-\\ B.A. in Physics and Astrophysics \hfill {}
+{\bf University of California, Berkeley} \hfill {Aug 2017 - May 2021} 
+\\ B.A. in Physics and Astrophysics (Honors)\hfill {}
 
 %Minor in Linguistics \smallskip \\
 %Member of Eta Kappa Nu \\
@@ -69,141 +71,158 @@
 
 \begin{rSection}{Research Experience}
 
-\begin{rSubsection}{Kavli Institute for Cosmological Physics @ University of Chicago}{}{Advisor: Prof. Nickolay Gnedin}{May 2020 - Present} \\
+\begin{rSubsection}{Cosmic Physics Center @ Fermilab}{}{Advisor: Prof. Nickolay Gnedin}{May 2020 - Present} \\
 %Collaborator(s): Oleg Gnedin (Michigan) 
-\item Developing a physically motivated deep learning model to infer underlying conditions from Lyman-$\alpha$ emission spikes during the Epoch of Re-ionization.
-\item Working to analyze how early galaxies contribute to the creation of emission spikes using hydrodynamic simulations.
+\item Studied the evolution of the Lyman-$\alpha$ flux power spectrum at high redshift utilizing the CROC simulations suite.
+\item Developed summary statistics that can be used by future surveys to determine the redshift of overlap of ionized bubbles during the Epoch of Reionization.
+\item Submitted paper to Astrophysical Journal.
 \end{rSubsection}
-
-\begin{rSubsection}{Cosmic Physics Center @ Fermilab}{}{Advisor: Dr. Noah Kurinsky}{May 2020 - Aug 2020}
+\vspace{-.7cm}
+\begin{rSubsection}{}{}{Advisor: Dr. Noah Kurinsky}{May 2020 - Aug 2020}
 %Collaborator(s): Enectali Figueroa-Feliciano (Northwestern) , Tarek Saab (Florida) 
 
-\item Worked to characterizing quantum yield of eV-threshold photon detectors for the next-gen SuperCDMS Dark Matter detector.
-\item Remotely operated the NEXUS detector facility at Northwestern University to take data on the admittance of the detector at a variety of temperatures.
-\item Characterized the complex impedance of the detector using a two-block thermal conductance model to improve the noise modeling.
+\item Worked to characterizing quantum yield of eV-threshold photon detectors for the next-gen Super Cryogenic Dark Matter Search (SuperCDMS), which aims to detect WIMP dark matter.
+\item Remotely operated the Northwestern Experimental Underground Site (NEXUS) detector facility at Northwestern University to take data on the admittance of the detector at a variety of temperatures.
+\item Co-authored paper in Physical Review D.
 \end{rSubsection}
 
-\begin{rSubsection}{Berkeley Center for Cosmological Physics @ University of California, Berkeley}{}{Advisor: Prof. Uro\v{s} Seljak}{May 2019 - Present}
-\item Studying the variance of Lyman-$\alpha$ forest data on different simulated cosmologies.
-\item Developing non-linear machine learning framework in TensorFlow to construct Lyman-$\alpha$ data sets based on a Bayesian inference model.
+\begin{rSubsection}{Berkeley Center for Cosmological Physics @ UC Berkeley}{}{Advisor: Prof. Martin White}{May 2021 - Present}
+\item Developing code to understand how the matter power spectrum, parametrized by a Lagrangian bias expansion, impacts weak-lensing two-point correlation functions
+\item Exploring optimal scale cuts for future surveys in both configuration and harmonic space.
+\item Designing potential DESI-II Lyman-$\alpha$ survey strategies.
 \end{rSubsection}
-\vspace{-.8cm}
+\vspace{-.7cm}
+\begin{rSubsection}{}{}{Advisor: Prof. Uro\v{s} Seljak}{May 2019 - Present}
+\item Studying the variance of Lyman-$\alpha$ forest data on different simulated cosmologies.
+\item Utilizing normalizing flows to extract cosmological information from 1D probability distribution (PDF) of simulated data.
+\end{rSubsection}
+\vspace{-.7cm}
 %----------------------------------------------------------------------------------------
 \begin{rSubsection}{}{}{Advisor: Dr. Emmanuel Schaan}{May 2018 - Oct 2019}
-\item Studied lensing of the Cosmic Microwave Background using numerical and analytic methods (in Python) for measuring gravitational lensing effects.
-\item Quantified the bias of lensed of foregrounds on CMB lensing estimation and its impact on the Simons Observatory experiment.
-\item Published paper in Physical Review D.
+\item Studied lensing of the cosmic microwave background  (CMB) using numerical and analytic methods (in Python) for measuring gravitational lensing effects.
+\item Quantified the bias of lensed foregrounds on CMB lensing estimation and its impact on the Simons Observatory experiment.
+\item Published paper in Physical Review D and presented at Simons Observatory telecon.
 \end{rSubsection}
-
 %----------------------------------------------------------------------------------------
 \begin{rSubsection}{Texas Tech University}{ }{Advisor: Prof. Alessandra Corsi}{Jun 2016 - Aug 2017}
-\item Studied the effectiveness of source extraction pipelines for the analysis of Karl G. Jansky Very Large Array (VLA) images collected as part of the radio follow-up of gravitational wave triggers during Advanced LIGO first observing run.
-\item Made use of CASA software package for radio astronomy to analyze images of radio sources.
+\item Studied the effectiveness of source extraction pipelines for the analysis of Very Large Array (VLA) images collected as part of the radio follow-up of gravitational wave triggers during during the first observing run of Advanced LIGO.
 \item Co-authored paper in Astrophysical Journal Letters.
 \item Worked to develop curriculum related to research for lab portion of entry level Astronomy course at TTU.
 \end{rSubsection}
 
 \end{rSection}
 
-%----------------------------------------------------------------------------------------
-%\begin{rSection}{Other Experience}
-
-%\begin{rSubsection}{Cascadia Meteorite Laboratory, Portland State University}{ }{Advisor: Prof. Alexander %Ruzicka}{Jan 2016 - Sep 2016}
-%\item Studied nature and chemical properties of meteorites at the Cascadia Meteorite Laboratory
-%\item Analyzed the mineral and chemical composition of meteorites originating from the asteroid/minor planet 4 %Vesta
-%\item Used a Petrographic Microscope to image (both with polarized and unpolarized light) and qualitatively %characterize objects studied then used data to select for chemical analysis
-%\item Classified two meteorites from Africa as chondrites. (See publications)
-%\end{rSubsection}
-%
-%----------------------------------------------------------------------------------------
-%\begin{rSubsection}{San Jose State University}{ }{Advisor: Prof. Carolus Boekema}{Jun 2015 - Jul 2015}
-%\item Studied and performed data analysis in condensed matter.
-%\item Observed at the magnetic properties of GdBCO (Gadolinium Barium Copper Oxide) using $\mu$SR %(Muon-spin-rotation) data taken at Los Alamos; µSR is an experimental technique based on implanting polarized %muons.
-%\item Used data on rotation and relaxation effects of the muon spin order to map the local environment.
-%\end{rSubsection}
-%\end{rSection}
-
 \newpage
 
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Publications}
 
-\textbf{N. Mishra}, E. Schaan (2019), \textit{Bias to CMB lensing from lensed foregrounds}, Physical Review D, vol. 100, no. 12. \href{https://arxiv.org/abs/1908.08057}{arXiv:1908.08057}
+\textbf{N. Mishra}, N. Gnedin (2021, submitted) \textit{Cosmic Reionization on Computers: Evolution of the Flux Power Spectrum.} The Astrophysical Journal. \href{https://arxiv.org/abs/2109.13252}{arXiv:2109.13252}
 
-N. T. Palliyaguru, A. Corsi, M. M. Kasliwal, S. B. Cenko, D. A. Frail, D. A. Perley, \textbf{N. Mishra}, L. P. Singer, A. Gal-Yam, P. E. Nugent, J. A. Surace (2016),  \textit{Radio follow-up of gravitational-wave triggers during Advanced LIGO O1.} The Astrophysical Journal Letters, vol. 829, no. 2. \href{https://arxiv.org/abs/1608.06518}{arXiv:1608.06518}
+R. Ren et al. [including \textbf{N. Mishra}] (2021) \textit{Design and characterization of a phonon-mediated cryogenic particle detector with an eV-scale threshold and 100 keV-scale dynamic range. } Physical Review D. vol 104. no. 3. \href{https://arxiv.org/abs/2012.12430}{arXiv:2012.12430}
 
-%A. Ruzicka, K. Bocian, \textbf{N. Mishra} (2018), \textit{Classification for Meteorite - Northwest Africa %\href{https://www.lpi.usra.edu/meteor/metbull.php?code=66379}{11548}/\href{11549}{11549}}. Meteoritical %Bulletin Database, no. 106. 
+\textbf{N. Mishra}, E. Schaan (2019), \textit{Bias to CMB lensing from lensed foregrounds}, Physical Review D, vol. 100, no. 12. \href{https://arxiv.org/abs/1908.08057}{arXiv:1908.08057} (\href{https://drive.google.com/file/d/1dWrQrhB0moSJ9O689zwzJHJY4LZAfqfd/view?usp=sharing}{Simons Observatory Talk})
+
+N. T. Palliyaguru et al. [including \textbf{N. Mishra}] (2016),  \textit{Radio follow-up of gravitational-wave triggers during Advanced LIGO O1.} The Astrophysical Journal Letters, vol. 829, no. 2. \href{https://arxiv.org/abs/1608.06518}{arXiv:1608.06518}
+
 
 \end{rSection}
 
 
-\begin{rSection}{Talks \& Presentations}
-%\textbf{N. Mishra}, U. Seljak (2020, in prep) \textit{Gaussianization of Lyman-$\alpha$ Forest %power spectrum to constrain cosmological parameters}, UC Berkeley, Berkeley Physics Research %Scholars Symposium.
+\begin{rSection}{Talks \& Posters}
 
-\textbf{N. Mishra}, N. Kurinsky (2020), \textit{Characterizing complex impedance in TES Detectors for SuperCDMS}, Fermi National Accelerator Laboratory, SULI Program Poster Session (Remote).
+\textbf{N. Mishra}, N. Gnedin (2021) \textit{Cosmic Reionization on Computers: Constraints on the Epoch of Reionization from the Cosmic Microwave Background}, Fermilab, SULI Program Talk (Remote). \href{https://drive.google.com/file/d/1N6gzkKZhJ5ys09r0dTMGPrxB3Cuptzy0/view?usp=sharing}{Link}.
 
-%\textbf{N. Mishra} (2019), \textit{Bias in CMB lensing from lensed foregrounds}, Lawrence Berkeley National %Laboratory, CMB lensing group Lunch Talk.
+\textbf{N. Mishra}, C. Modi, B. Horowitz, U. Seljak (2021) \textit{Cosmological inference from Lyman-$\alpha$ forest using normalizing flows}, UC Berkeley, Berkeley Physics Research Scholars Symposium (Remote). \href{https://drive.google.com/file/d/1XuXI_SQHKejJCku6RJHtCKTVew9w3axV/view?usp=sharing}{Link}.
 
-\textbf{N. Mishra}, E. Schaan, M. Alvarez (2018), \textit{Bias to CMB lensing from foreground lensing reconstruction}, UC Berkeley, Undergraduate Physics Symposium.
+\textbf{N. Mishra}, N. Kurinsky (2020), \textit{Characterizing complex impedance in TES Detectors for SuperCDMS}, Fermi National Accelerator Laboratory, SULI Program Poster Session (Remote). \href{https://drive.google.com/file/d/1nKGlg7HyUcKixctRa59Tt69s8TmLjG-P/view?usp=sharing}{Link}.
 
-\textbf{N. Mishra} (2016), \textit{Radio follow-up of gravitation waves: Optimizing source identification in VLA images}. Texas Tech University, Clark Scholars Symposium.
+%textbf{N. Mishra} (2019), \textit{Bias in CMB lensing from lensed foregrounds}, Lawrence Berkeley National %Laboratory, CMB lensing group Lunch Talk.
+
+\textbf{N. Mishra}, E. Schaan, M. Alvarez (2018), \textit{Bias to CMB lensing from foreground lensing reconstruction}, UC Berkeley, Undergraduate Physics Symposium. \href{https://drive.google.com/file/d/18AW06Ywywsk3P1AyXzOskSAr6hfvv9An/view?usp=sharing}{Link}.
 
 \end{rSection}
 
-\begin{rSection}{Scholarships \& Grants}
 
-\item  - Summer Undergraduate Laboratory Internship (SULI) @ Fermilab (2020): Among 20 selected via nationwide application process, with Fermilab acceptance rate of $\sim10\%$
+\begin{rSection}{Teaching and Outreach}
 
-\item  - Berkeley Physics Research Scholar (2019-20): Stipend provided to students who demonstrate the ability and motivation to execute a research project under faculty advisor at UC Berkeley
+\begin{rSubsection}{Physics 98 Seminar: Lasers for Everyone}{}{Reference: Prof. Holger Muller}{Jan 2021 - May 2021} \\
+\item The Democratic Education at Cal (DeCal) program at UC Berkeley allows students to create and facilitate their own courses that other students enroll in for credit.
+\item Developed a course in applied physics titled, ``Lasers for Everyone", which taught students the basic physics of Lasers and related instrumentation as well as the countless applications of such devices in physics, astronomy and engineering.
+\item Responsibilities included lecture planning, creating and grading homework assignments, hosting office hours to provide one-on-one support for our students.
+\end{rSubsection}
 
-\item  - Clark Scholar (2016): Among 12 selected via nationwide application process (500+ applicants) that provides paid research internships to HS students.
+
+\begin{rSubsection}{Astronomy C10: Introduction to General Astronomy}{}{Reference: Prof. Alex Filippenko}{Aug 2020 - Dec 2020} \\
+\item Led two discussion section of 30 students each throughout the semester.
+\item Created lesson plans and quizzes to improve students' knowledge of the subject matter.
+\item Developed teaching skills by concurrently enrolling in the Astronomy Teaching Pedagogy course at Berkeley.
+\end{rSubsection}
+
+\begin{rSubsection}{Berkeley Undergraduate Research Fair Coordinator}{}{Reference: Roia Ferrazares, Dr. Austin Hedeman}{May 2020 - May 2021} \\
+\item Conceptualized and organized an event to connect UC Berkeley professors with undergraduates looking to do research in their labs.
+\item Fall 2020 and Spring 2021 editions of the event had 12+ faculty members offering 20+ research positions. 80+ students attending the virtual event. As a result of this success, the department has included the fair as a regular bi-anual event.
+\item Assisted administration in setting up additional funding channels for undergraduate researchers including scholarships and work-study programs, the latter intending on opening up opportunity for middle and low income students.  $\sim 65$ \% of positions offered were funded (compared to $\sim 25$ \% in 2019)
+\end{rSubsection}
+
+\begin{rSubsection}{Splash Class Instructor}{}{Reference: Splash at Berkeley}{Mar 2020 - Oct 2020} \\
+\item Splash at Berkeley brings local high school students to UC Berkeley for a day of student-led learning. Participating students take courses in both conventional and unconventional subjects taught by Berkeley students. 
+\item Taught a 1 hour course (An Introduction to Dark Matter Physics) to 70+ high school students (grades 9-12), over the past 2 semesters. It has been one of the most popular STEM courses offered at Splash.
+\end{rSubsection}
 
 
+\end{rSection}
+
+
+\begin{rSection}{Selected Awards \& Scholarships}
+\begin{rSubsection}{}{ }{}{}
+
+\item NSF Graduate Research Fellowship (2022): Honorable Mention
+
+\item Berkeley Lab Undergraduate Research (BLUR) Grant (2022): Places undergraduates, post baccalaureates, and graduate students who have established collaborations with LBNL scientists.
+
+\item Science Undergraduate Laboratory Internship (SULI) @ Fermilab (2020/2021): Twice among 20 selected via nationwide application process, with Fermilab acceptance rate of $\sim10\%$
+
+\item Berkeley Physics Research Scholar (2019-21): Stipend provided to students who demonstrate the ability and motivation to execute a research project under faculty advisor at UC Berkeley.
+
+\item Clark Scholar (2016): Among 12 selected via nationwide application process (500+ applicants) that provides paid research internships to high school students.
+\end{rSubsection}
 
 
 \end{rSection}
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Relevant Courses}
+\itab{\hspace{-.4cm}\textbf{Core Courses}} \tab{}  \tab{\hspace{-.4cm}\textbf{Other Courses}}
+\\ \itab{\hspace{-.4cm}Analytic Mechanics (PHYS 105)} \tab{}  \tab{\hspace{-.4cm}Linear Algebra \& Differential Eq. (MATH 54)}
+\\ \itab{\hspace{-.4cm}Electromagnetism \& Optics I/II (PHYS 110A/B)} \tab{}  \tab{\hspace{-.4cm}Multivariable Calculus (MATH 53)} 
+\\ \itab{\hspace{-.4cm}Quantum Mechanics I/II (PHYS 137A/B)}  \tab{}  \tab{\hspace{-.4cm}Computational Techniques in Physics (PHYS 77)}
+\\ \itab{\hspace{-.4cm}Statistical Mechanics (PHYS 112)} \tab{} \tab{\hspace{-.4cm}Mathematical Physics (PHYS 89)}  
+\\ \itab{\hspace{-.4cm}Relativistic Astrophysics \& Cosmology (PHYS C161)} \tab{} \tab{\hspace{-.4cm}Experimental Physics I/II (PHYS 5BL/5CL)}  
+\\ \itab{\hspace{-.4cm}Astrophysical Fluid Dynamics \textbf{(ASTR 202)}} \tab{} \tab{\hspace{-.4cm}Introductory Physics Series (PHYS 5A/B/C)} 
+\\ \itab{\hspace{-.4cm}Stellar Physics (ASTR 160)} \tab{} \tab{\hspace{-.4cm}Introduction to Astrophysics (ASTR 7B)}
+\\ \itab{\hspace{-.4cm}Intoduction to Quantum Field Theory (PHYS 151)} \tab{} \tab{\hspace{-.4cm}Instrumentation Laboratory (PHYS 111A)}
+\\ \itab{\hspace{-.4cm}Advanced Cosmology \textbf{(PHYS 229)}} \tab{} \tab{\hspace{-.4cm}Advanced Laboratory (PHYS 111B)}
+\\ \itab{\hspace{-.4cm}Introduction to Plasma Physics (PHYS 142)} \tab{} \tab{\hspace{-.4cm}\textit{}}
+\\ \itab{\hspace{-.4cm}Introduction to Radio Astronomy (ASTR 121)} \tab{} \tab{\hspace{-.4cm}\textit{}}
 
-\itab{\hspace{-.5cm}\textbf{Core Courses}} \tab{}  \tab{\hspace{-.5cm}\textbf{Other Courses}}
-\\ \itab{\hspace{-.5cm}Analytic Mechanics (PHYS 105)} \tab{}  \tab{\hspace{-.5cm}Linear Algebra \& Differential Eq. (MATH 54)}
-\\ \itab{\hspace{-.5cm}Electromagnetism \& Optics I/II (PHYS 110A/B)} \tab{}  \tab{\hspace{-.5cm}Multivariable Calculus (MATH 53)} 
-\\ \itab{\hspace{-.5cm}Quantum Mechanics I/II (PHYS 137A/B)}  \tab{}  \tab{\hspace{-.5cm}Computational Techniques in Physics (PHYS 77)}
-\\ \itab{\hspace{-.5cm}Statistical Mechanics (PHYS 112)} \tab{} \tab{\hspace{-.5cm}Mathematical Physics (PHYS 89)}  
-\\ \itab{\hspace{-.5cm}Relativistic Astrophysics \& Cosmology (PHYS C161)} \tab{} \tab{\hspace{-.5cm}Experimental Physics I/II (PHYS 5BL/5CL)}  
-\\ \itab{\hspace{-.5cm}Astrophysical Fluid Dynamics (ASTR 202)} \tab{} \tab{\hspace{-.5cm}Introductory Physics Series (PHYS 5A/B/C)} 
-\\ \itab{} \tab{} \tab{\hspace{-.5cm}Introduction to Astrophysics (ASTR 7B)}
-\\ \itab{} \tab{} \tab{\hspace{-.5cm}Instrumentation Laboratory (PHYS 111A)}
 
+\small
+ \textbf{Bolded} courses are graduate-level
 \end{rSection}
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Skills}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{3ex}} l }
 Programming
- &  Python (NumPy, SciPy, SymPy, Matplotlib, TensorFlow, Keras etc.)\\
- &  Java, Fortran 90, Excel, Bash/Unix, GIT, LabView, \\ \vspace{.5cm}
- &  Experience w/ NERSC/SLAC/FNAL computing resources \\
-
-Research
- & Simulations, Machine Learning, Statistical Analysis, Technical Writing, \\
- & Basic Physics Laboratory (Circuit Design, Signal ,\\
- & Signal Generators, Oscilloscope, Arduino) \\
+ &  Python: NumPy, SciPy, SymPy, Matplotlib etc.\\
+ &  Machine Learning: TensorFlow, Keras, PyTorch \\
+ &  Other Languages: Java, Fortran 90, Excel, Bash/Unix, GIT, LabView, HTML\\ \vspace{.5cm}
+ &  Computing: Experience w/ NERSC/SLAC/FNAL resources (Slurm) \\
 \end{tabular}
 
 \end{rSection}
 
-\newpage
 
-\begin{rSection}{Teaching and Outreach}
-\hspace{-0cm}{
-\item  - SPLASH (2020): Taught a 1 hour course (An Introduction to Dark Matter Physics) to 50+ high school students (grades 9-12). Will teach the course again during future SPLASH events.
 
-\item  - Berkeley Undergraduate Research Fair (2020): Organizing an event to connect UC Berkeley professors with undergraduates looking to do research in their labs. Also working to set up additional funding channels for undergraduate researchers including scholarships and work-study programs.
-
-\item  - Society of Physics Students (2018-2020): Volunteered at several outreach events including Cal Day and the Bay Area Science Fest.
-}
-
-\end{rSection}
 
 \end{document}
